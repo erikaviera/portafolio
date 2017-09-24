@@ -9,7 +9,4 @@ import { InformacionService } from "../../services/informacion.service";
 })
 export class HeaderComponent {
   constructor (public _is:InformacionService){}
-
-
-
 }
