@@ -4,6 +4,8 @@ import { NgModule } from '@angular/core';
 //Rutas
 import{ app_routing} from "./app.routes";
 
+//Servicios
+import{InformacionService} from "./services/informacion.service";
 
 // Componentes
 import { FormsModule } from '@angular/forms';
@@ -23,7 +25,6 @@ import { ItemComponent } from './components/item/item.component';
     FooterComponent,
     PortafolioComponent,
     AboutComponent,
-    ItemComponent,
     ItemComponent
   ],
   imports: [
@@ -32,7 +33,7 @@ import { ItemComponent } from './components/item/item.component';
     HttpModule,
     app_routing,
   ],
-  providers: [],
+  providers: [InformacionService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
