@@ -10,6 +10,10 @@ export class ProductosService {
     this.cargar_productos();
   }
 
+public cargar_producto(cod:string){
+  return this.http.get(`https://portafolio-c410e.firebaseio.com/productos/${cod}.json`);
+}
+
   public cargar_productos(){
 
       this.cargando= true;
