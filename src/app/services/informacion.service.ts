@@ -18,7 +18,7 @@ export class InformacionService {
 public carga_info(){
   this.http.get("assets/data/info.pagina.json")
 .subscribe( data =>{
-  console.log(data.json());
+  //console.log(data.json());
   this.info = data.json();
   this.cargada = true;
 })
@@ -27,7 +27,7 @@ public carga_info(){
 public carga_sobre_nosotros(){
   this.http.get("https://portafolio-c410e.firebaseio.com/equipo/equipo.json")
 .subscribe( data =>{
-  console.log(data.json());
+  //console.log(data.json());
   this.equipo = data.json();
   this.cargada_sobre_nosotros = true;
 })

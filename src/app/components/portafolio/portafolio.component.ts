@@ -3,8 +3,7 @@ import {ProductosService} from "../../services/productos.service";
 
 @Component({
   selector: 'app-portafolio',
-  templateUrl: './portafolio.component.html',
-  styles: []
+  templateUrl: './portafolio.component.html'
 })
 export class PortafolioComponent {
 
